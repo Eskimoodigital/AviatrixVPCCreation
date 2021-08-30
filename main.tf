@@ -1,14 +1,20 @@
 
 
-
+terraform {
+  required_providers {
+    aviatrix = {
+      source  = "hashicorp/aviatrix"
+      version = "~> 2.19.0"
+    }
+  }
+}
 
 # Configure Aviatrix provider
 provider "aviatrix" {
   controller_ip           = "35.162.98.189"
   username                = "admin"
   password                = "Ccie16661!"
-  skip_version_validation = false
-  version                 = "2.19.0"
+  
 }
 
 
